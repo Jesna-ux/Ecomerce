@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        .main-header {
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+
+        .main-header .cart-icon {
+            font-size: 1.2em;
+            cursor: pointer;
+            text-decoration: none;
+            color: #333;
+        }
+
+        /* Main Content & Product Grid */
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding-bottom: 15px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-card h3 {
+            font-size: 1.2em;
+            margin: 15px 0 5px;
+            padding: 0 10px;
+        }
+
+        .product-card .price {
+            font-size: 1.1em;
+            color: #e67e22;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .product-card button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .product-card button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        .main-footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            .main-header {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .main-header h1 {
+                margin-bottom: 10px;
+            }
+
+            main {
+                padding: 10px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>My E-Shop</h1>
+        <a href="#" class="cart-icon">🛒 Cart (0)</a>
+    </header>
+
+    <main>
+        <section class="products-grid">
+            <div class="product-card">
+                <img src="product1.png" alt="Product Image 1">
+                <h3>Stylish T-Shirt</h3>
+                <p class="price">$25.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="" alt="Product Image 2">
+                <h3>Comfortable Jeans</h3>
+                <p class="price">$50.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="" alt="Product Image 3">
+                <h3>Casual Sneakers</h3>
+                <p class="price">$75.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="" alt="Product Image 4">
+                <h3>Leather Wallet</h3>
+                <p class="price">$30.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            <div class="product-card">
+                <img src="" alt="Product Image 5">
+                <h3>Classic Watch</h3>
+                <p class="price">$120.00</p>
+                <button>Buy Now</button>
+            </div>
+
+            
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 My E-Shop. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
