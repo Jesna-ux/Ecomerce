@@ -3,108 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - E-commerce</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eddee6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            flex-direction: column;
-        }
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 400px;
-            box-sizing: border-box;
-        }
-        h2 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-            color: #555;
-            font-weight: bold;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box;
-        }
-        .form-group input:focus {
-            outline: none;
-            border-color: #007bff;
-        }
-        button {
-            width: 100%;
-            padding: 12px;
-            background-color: #007bff;
-            border: none;
-            border-radius: 4px;
-            color: #fff;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        p.login-link {
-            text-align: center;
-            margin-top: 20px;
-        }
-        p.login-link a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        p.login-link a:hover {
-            text-decoration: underline;
-        }
-        /* Responsive CSS */
-        @media (max-width: 768px) {
-            .container {
-                padding: 20px;
-            }
-        }
-    </style>
+    <title>Create Account | FashionHub</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
-        <h2>Create an Account 📝</h2>
-        <form action="#" method="post">
-            <div class="form-group">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" required>
+
+<body class="form-page">
+
+    <div class="form-box">
+
+        <h2>Create Account 🛍️</h2>
+
+        <form action="sign_in.html">
+
+            <div class="input-box">
+                <input type="text" placeholder="Full Name" required>
             </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+
+            <div class="input-box">
+                <input type="email" placeholder="Email Address" required>
             </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+
+            <div class="input-box">
+                <input type="password" placeholder="Password" required>
             </div>
-            <div class="form-group">
-                <label for="confirm-password">Confirm Password</label>
-                <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" required>
             </div>
-            <button type="submit">Sign Up</button>
+
+            <button class="form-btn">
+                Create Account
+            </button>
+
         </form>
-        <p class="login-link">Already have an account? <a href="sign_in.html">Sign In</a></p>
+
+        <p>
+            Already have an account?
+            <a href="sign_in.html">Sign In</a>
+        </p>
+
     </div>
+
 </body>
 </html>
